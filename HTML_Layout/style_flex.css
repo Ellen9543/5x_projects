@@ -1,0 +1,116 @@
+body {
+  font-size: 14px;
+}
+
+.headerWrap {
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+  background: #000;
+  color: #FFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: 5;
+}
+
+.menu {
+  height: inherit;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 1.5em;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  width: 300px;
+  height: var(--header-height);
+  background-image: url("https://wp.dreamitsolution.net/dex/wp-content/uploads/2022/02/bg-patern-overlay.png");
+  position: relative;
+}
+
+main > section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: calc(100vh - var(--header-height));
+  width: var(--max-width);
+  margin: var(--header-height) auto 0px ;
+}
+
+/* ============== Feature Start ============== */
+
+.Feature article {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Feature article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.Feature article > div * {
+  text-align: center;
+}
+
+.Feature article {
+  height: 442px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ============== Feature End ============== */
+
+
+/* ============== AboutUs Start ============== */
+
+.AboutUs {
+  gap: 0px;
+  align-items: flex-start;
+}
+
+.AboutUs  > * {
+  flex: 1;
+}
+
+.AboutUs .Img img {
+  width: 100%;
+}
+
+.AboutUs .contentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.AboutUs .contentWrap > * {
+  margin-left: 2rem;
+}
+
+/* ============== AboutUs End ============== */
+
+
+/* ============== Profile Info Start ============== */
+
+.ProfileInfo .contentWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.ProfileInfo .contentWrap article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============== Profile Info End ============== */

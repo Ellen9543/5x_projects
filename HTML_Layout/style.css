@@ -1,0 +1,122 @@
+body {
+  font-size: 0;
+}
+
+.headerWrap {
+  height: var(--header-height);
+  background: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+
+.search {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  width: 300px;
+  height: var(--header-height);
+  background-image: url("https://wp.dreamitsolution.net/dex/wp-content/uploads/2022/02/bg-patern-overlay.png");
+}
+
+.menu {
+  color: var(--color-secondary);
+  width: fit-content;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.menu li {
+  display: inline-block;
+  line-height: var(--header-height);
+  font-size: 14px;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 1.5em;
+}
+
+
+main > section {
+  height: calc(100vh - var(--header-height));
+  width: var(--max-width);
+  margin: var(--header-height) auto 0px ;
+  position: relative;
+}
+
+main > section > div {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ============== Feature Start ============== */
+
+.Feature article {
+  display: inline-block;
+  width: calc(960px / 3 - 3em);
+  height: 400px;
+  padding: 1.5em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  position: relative;
+}
+
+.Feature article:not(:last-child) {
+  margin-right: 20px;
+}
+
+.Feature article > div > * {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ============== Feature End ============== */
+
+
+/* ============== About Us Start ============== */
+
+.AboutUs > div > * {
+  display: inline-block;
+  width: 50%;
+}
+
+.AboutUs .Img img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.AboutUs article {
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.AboutUs article > * {
+  margin: 0 0 2rem 2rem;
+}
+
+/* ============== About Us End ============== */
+
+
+/* ============== Profile Info Start ============== */
+
+.ProfileInfo article {
+  display: inline-block;
+  width: calc(940px / 4);
+}
+
+.ProfileInfo article:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* ============== Profile Info End ============== */
