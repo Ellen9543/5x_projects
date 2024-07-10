@@ -45,7 +45,7 @@ body {
 
 
 main > section {
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
   width: var(--max-width);
   margin: var(--header-height) auto 0px ;
   position: relative;
