@@ -19,6 +19,9 @@
   --color-btn-text:#0056b3;
   --max-width: 1000px;
   --header-height: 100px;
+  --zindex-low:-1;
+  --zindex-middle:5;
+  --zindex-high:10;
 }
 
 button {
@@ -60,7 +63,7 @@ button {
   width: 52px;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: var(--zindex-low);
   transition: .5s;
 }
 
@@ -72,6 +75,14 @@ button {
   width: 100%;
 }
 
+.search {
+  width: 300px;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  background-image: url("https://wp.dreamitsolution.net/dex/wp-content/uploads/2022/02/bg-patern-overlay.png");
+  text-align: right;
+}
+
 /* ============== 共用 End ============== */
 
 
@@ -79,15 +90,13 @@ button {
 
 .menu li.arrows a:after {
   content: "";
-  transform: rotate(-45deg);
+  transform: translateX(7px) translateY(-50%) rotate(-45deg);
   border-left: 2px solid var(--color-secondary);
   border-bottom: 2px solid var(--color-secondary);
   display: inline-block;
   width: 5px;
   height: 5px;
   opacity: 0.5;
-  margin-left: 7px;
-  margin-bottom: 3px;
 }
 
 .menu li:hover, .menu li.arrows:hover a::after {
@@ -95,26 +104,23 @@ button {
   border-color: var(--color-primary);
 }
 
+.search .searchIcon {
+  font-size: 20px;
+  color: var(--color-secondary);
+  font-weight: bolder;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 .search .searchBtn {
   background: var(--color-secondary);
   color: var(--color-primary);
   width: 120px;
   height: 40px;
-  position: absolute;
-  right: 20px;
-  top: 0px;
-  bottom: 0px;
-  margin: auto;
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.search .searchBtn:before {
-  content: "\f002";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: var(--color-secondary);
-  position: absolute;
-  left: -30px;
-}
 /* ============== header End ============== */
 
 
@@ -130,30 +136,12 @@ button {
 }
 
 /* ======= hover ======= */
-.Feature article:before {
-  content: '';
-  background: linear-gradient(180deg, rgba(205, 162, 116, .9), rgba(205, 162, 116, .9)), url("https://wp.ditsolution.net/dex/wp-content/themes/dex/assets/images/svbg1.png") no-repeat center / cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transition: .5s;
-  opacity: 0;
-  z-index: 1;
-}
-
-.Feature article:hover::before {
-  opacity: 1;
+.Feature article:hover {
+  background: linear-gradient(180deg, rgba(205, 162, 116, .9), rgba(205, 162, 116, .9)), url(https://wp.ditsolution.net/dex/wp-content/themes/dex/assets/images/svbg1.png) no-repeat center / cover;
 }
 
 .Feature article:hover img {
   filter: brightness(0) invert(1);
-}
-
-.Feature article:hover > div {
-  position: relative;
-  z-index: 2;
 }
 
 .Feature article:hover > div > * {
@@ -163,6 +151,7 @@ button {
 .Feature article:hover .btn {
   border-color: var(--color-secondary);
   color:#000;
+  z-index: var(--zindex-middle);
 }
 
 .Feature article .btn:hover {
@@ -190,7 +179,7 @@ button {
   line-height: 2.5em;
 }
 
-.AboutUs article li>i {
+.AboutUs article li > i {
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -229,20 +218,24 @@ button {
 
 .ProfileInfo article {
   height: 355px;
-  background-color: #fbfbfb;
   position: relative;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
+
 .ProfileInfo article img {
   width: 100%;
+  transition: .5s;
 }
 
 .ProfileInfo article .Info {
   position: absolute;
-  height: 80px;
+  height: 85px;
   bottom: 0;
   right: 0;
   left: 0;
   transition: .5s;
+  background-color: #fbfbfb;
 }
 
 .ProfileInfo article h2 {
@@ -287,30 +280,23 @@ button {
   font-weight: 900;
 }
 
+.ProfileInfo article:hover {
+  cursor: pointer;
+  border: 2px solid var(--color-primary);
+}
+
 .ProfileInfo article:hover .Img > .hoverIcon {
   display: inline;
+  z-index: var(--zindex-middle);
 }
 
 .ProfileInfo .contentWrap .Img {
   position: relative;
+  font-size: 0;
 }
 
-.ProfileInfo .contentWrap .Img:before {
-  content: "";
-  background: rgba(245,246,247,.7);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border: 2px solid var(--color-primary);
-  box-sizing: border-box;
-  transition: .5s;
-  opacity: 0;
-}
-
-.ProfileInfo article:hover .Img:before {
-  opacity: 1;
+.ProfileInfo article:hover .Img img {
+  opacity: 0.5;
 }
 
 .ProfileInfo article:hover .Info {

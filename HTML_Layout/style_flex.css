@@ -13,7 +13,7 @@ body {
   right: 0;
   left: 0;
   padding: 0 20px;
-  z-index: 5;
+  z-index: var(--zindex-middle);
 }
 
 .menu {
@@ -26,13 +26,6 @@ body {
   height: inherit;
   align-items: center;
   justify-content: center;
-}
-
-.search {
-  width: 300px;
-  height: var(--header-height);
-  background-image: url("https://wp.dreamitsolution.net/dex/wp-content/uploads/2022/02/bg-patern-overlay.png");
-  position: relative;
 }
 
 main > section {
