@@ -95,6 +95,9 @@ main > section {
 
 /* ============== Profile Info Start ============== */
 
+.ProfileInfo div {
+  width: 100%;
+}
 .ProfileInfo .contentWrap {
   display: flex;
   gap: 20px;
@@ -104,6 +107,7 @@ main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc((100% - 60px) / 4);
 }
 
 /* ============== Profile Info End ============== */

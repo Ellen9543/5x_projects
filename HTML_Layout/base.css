@@ -217,23 +217,21 @@ button {
 }
 
 .ProfileInfo article {
-  height: 355px;
-  position: relative;
   border: 2px solid transparent;
   box-sizing: border-box;
+  vertical-align: top;
 }
 
 .ProfileInfo article img {
   width: 100%;
-  transition: .5s;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .ProfileInfo article .Info {
-  position: absolute;
   height: 85px;
-  bottom: 0;
-  right: 0;
-  left: 0;
   transition: .5s;
   background-color: #fbfbfb;
 }
@@ -293,6 +291,13 @@ button {
 .ProfileInfo .contentWrap .Img {
   position: relative;
   font-size: 0;
+  height: 265px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.ProfileInfo article:hover .Img {
+  height: 250px;
 }
 
 .ProfileInfo article:hover .Img img {
