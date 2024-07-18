@@ -415,14 +415,16 @@ main {
   margin-top: 50px;
 }
 
-.video-area .video-bgimg {
+.video-area .img-bg {
+  background: linear-gradient(to bottom,  #F3F4F6 67.5%, var(--color-pink) 67.6%);
+}
+.video-area .video-img {
   background: url(https://dmh6legpso131.cloudfront.net/images/astrocamp/home/astrocamp-red-rocket.svg) center bottom / 100% no-repeat;
   min-height: 680px;
   text-align: center;
   width: 100%;
   max-width: 80em;
   margin: 0 auto;
-  position: relative;
 }
 
 .video-area .caption {
@@ -452,8 +454,7 @@ main {
 .video {
   background: var(--color-pink);
   text-align: center;
-  padding-top: 250px;
-  margin-top: -221px;
+  padding-top: 50px;
 }
 
 .video h3 {
@@ -575,12 +576,12 @@ main {
 
 .shape-top {
   height: 100px;
-  clip-path: polygon(80% 0, 100% 30%, 100% 100%, 0 100%);
+  clip-path: polygon(80% 0, 100% 30%, 100% 101px, 0 101px);
 }
 
 .shape-bottom {
   height: 250px;
-  clip-path: polygon(0 0, 0 70%, 25% 100%, 100% 0);
+  clip-path: polygon(0 -1px, 0 70%, 25% 100%, 100% -1px);
 }
 
 .service-area {
