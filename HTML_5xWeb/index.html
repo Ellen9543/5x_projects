@@ -16,38 +16,55 @@
       <div>
         <a class="logo" href="">
           <img
+            class="img-web"
             alt="五倍"
             src="https://dmh6legpso131.cloudfront.net/images/logo.svg"
           />
+          <img
+            class="img-mobile"
+            alt="五倍"
+            src="https://dmh6legpso131.cloudfront.net/images/logo_ruby.svg"
+          />
         </a>
         <nav>
-          <ul class="menu">
-            <li><a href="#">線上課程</a></li>
-            <li><a href="#">實體課程</a></li>
-            <li><a href="#">ASTRO Camp</a></li>
-            <li><a href="#">企業服務</a></li>
-            <li class="arrows">
-              <a href="#">學院精選</a>
-              <ul class="sub-menu hide">
-                <li>企業訓練</li>
-                <li>技術諮詢</li>
-                <li>TalentD</li>
-              </ul>
-            </li>
-            <li class="arrows">
-              <a href="#">電子書</a>
-              <ul class="sub-menu hide">
-                <li>技術文章</li>
-                <li>學員分享</li>
-                <li>線上直播</li>
-                <li>職涯輔導</li>
-                <li>最新消息</li>
-                <li>媒體報導</li>
-              </ul>
-            </li>
-            <li><a href="#">註冊</a></li>
-            <li><a href="#">登入</a></li>
-          </ul>
+          <input id="baricon" type="checkbox" />
+          <div class="menu-area">
+            <ul class="menu">
+              <li><label>線上課程</label></li>
+              <li><label>實體課程</label></li>
+              <li><label>ASTRO Camp</label></li>
+              <li class="arrows">
+                <input id="service" name="submenu" type="radio" />
+                <label for="service">企業<span>服務</span></label>
+                <ul class="sub-menu">
+                  <li>企業訓練</li>
+                  <li>技術諮詢</li>
+                  <li>TalentD</li>
+                </ul>
+              </li>
+              <li class="arrows">
+                <input id="featured" name="submenu" type="radio" />
+                <label for="featured">學院<span>精選</span></label>
+                <ul class="sub-menu">
+                  <li>技術文章</li>
+                  <li>學員分享</li>
+                  <li>線上直播</li>
+                  <li>職涯輔導</li>
+                  <li>最新消息</li>
+                  <li>媒體報導</li>
+                </ul>
+              </li>
+              <li><label>電子書</label></li>
+            </ul>
+            <ul class="menu menu-btn">
+              <li>註冊</li>
+              <li>登入</li>
+            </ul>
+          </div>
+          <label for="baricon" class="bar">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x"></i>
+          </label>
         </nav>
       </div>
     </header>
@@ -62,23 +79,41 @@
             <img
               src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--da934f3e561063514163167f8ee0ce4c9f886bf7/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Moku%201440x706.webp"
               alt=""
+              class="banner-img-web"
+            />
+            <img
+              src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzMyOCwicHVyIjoiYmxvYl9pZCJ9fQ==--e7501f1342ff1f4df1f43d187ff7ff4bdcc28f63/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNzY3LDc2N119LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1e9412de992cd845dc4a5d1443bed2cfa79ca29c/Moku767x767.webp"
+              alt=""
+              class="banner-img-mobile"
             />
           </div>
           <div class="banner-img carousel-item img02">
             <img
               src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b6da94591c1fcd732743e53012c5380d8d0e5b7d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Astro%201440x706.webp"
               alt=""
+              class="banner-img-web"
+            />
+            <img
+              src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--7ebeafc89e820c45984fd2a5c37b9c9ef2fbef72/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNzY3LDc2N119LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1e9412de992cd845dc4a5d1443bed2cfa79ca29c/Astro%20767x767.webp"
+              alt=""
+              class="banner-img-mobile"
             />
           </div>
           <div class="banner-img carousel-item img03">
             <img
               src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1MywicHVyIjoiYmxvYl9pZCJ9fQ==--da920be5f44042289e43b217a364fda4a3314753/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Discord%201440x706.webp"
               alt=""
+              class="banner-img-web"
+            />
+            <img
+              src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1NCwicHVyIjoiYmxvYl9pZCJ9fQ==--55374c9a291e8a5984552862ddd71a8c8b26208f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNzY3LDc2N119LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1e9412de992cd845dc4a5d1443bed2cfa79ca29c/Discord%20767x767.webp"
+              alt=""
+              class="banner-img-mobile"
             />
           </div>
         </div>
-        <div>
-          <ul class="banner-btns">
+        <div class="banner-btns">
+          <ul>
             <li>ASTRO Camp</li>
             <li>默默會</li>
             <li>YouTube 頻道</li>
@@ -94,21 +129,23 @@
         <div class="products-area">
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">WEB101</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzMzOCwicHVyIjoiYmxvYl9pZCJ9fQ==--0922c0d122cef669be44ec48eee772a6ceebeb86/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/HTMLCSS%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">WEB101</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzA2LCJwdXIiOiJibG9iX2lkIn19--1e2f81d7c8cd8c30fb49767886c6eb9c81a78ae0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/avatar.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzMzOCwicHVyIjoiYmxvYl9pZCJ9fQ==--0922c0d122cef669be44ec48eee772a6ceebeb86/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/HTMLCSS%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>Lin</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzA2LCJwdXIiOiJibG9iX2lkIn19--1e2f81d7c8cd8c30fb49767886c6eb9c81a78ae0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/avatar.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>Lin</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>HTML/CSS 入門</h3>
@@ -132,21 +169,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">JS101</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTc5OSwicHVyIjoiYmxvYl9pZCJ9fQ==--6e5c6abff34281af0e12ed1007a500c6f49fbd2b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxMjgwLDcyMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--d60fc900f272bdbe72f87cf49dd9db76228c8ac9/js101.jpg"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">JS101</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e08fca243bdc3c68a162cbfd843634f8fce84d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/paint.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTc5OSwicHVyIjoiYmxvYl9pZCJ9fQ==--6e5c6abff34281af0e12ed1007a500c6f49fbd2b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxMjgwLDcyMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--d60fc900f272bdbe72f87cf49dd9db76228c8ac9/js101.jpg"
+                  alt="課程"
                 />
               </div>
-              <p>高見龍</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e08fca243bdc3c68a162cbfd843634f8fce84d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/paint.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>高見龍</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>為你自己學 JavaScript</h3>
@@ -166,21 +205,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">FE103</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--1748fac4415b47477a052fa312f0de6ff54e1383/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/React%20800x500%20(1).webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">FE103</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzA2LCJwdXIiOiJibG9iX2lkIn19--1e2f81d7c8cd8c30fb49767886c6eb9c81a78ae0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/avatar.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--1748fac4415b47477a052fa312f0de6ff54e1383/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/React%20800x500%20(1).webp"
+                  alt="課程"
                 />
               </div>
-              <p>Lin</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzA2LCJwdXIiOiJibG9iX2lkIn19--1e2f81d7c8cd8c30fb49767886c6eb9c81a78ae0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/avatar.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>Lin</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>動手玩 React！</h3>
@@ -199,21 +240,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">FE102</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--7f10f080fa579007ad1ef9e9953d66052e95a708/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Frontend%20Tiro.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">FE102</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzA2LCJwdXIiOiJibG9iX2lkIn19--1e2f81d7c8cd8c30fb49767886c6eb9c81a78ae0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/avatar.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--7f10f080fa579007ad1ef9e9953d66052e95a708/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Frontend%20Tiro.webp"
+                  alt="課程"
                 />
               </div>
-              <p>Lin</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzA2LCJwdXIiOiJibG9iX2lkIn19--1e2f81d7c8cd8c30fb49767886c6eb9c81a78ae0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/avatar.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>Lin</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>前端開發環境新手村</h3>
@@ -230,21 +273,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">FE201</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--3fd1b84977d8bf88e5541cb1b60516a696cb903e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/React%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">FE201</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--6cacb6921768aabdd9a3a8be8fc89758b5ac9587/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/MilkMidi%20400x400.webp"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--3fd1b84977d8bf88e5541cb1b60516a696cb903e/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/React%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>Lin</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--6cacb6921768aabdd9a3a8be8fc89758b5ac9587/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/MilkMidi%20400x400.webp"
+                    alt=""
+                  />
+                </div>
+                <p>Lin</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>React 完全進階攻略</h3>
@@ -262,21 +307,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">GIT103</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQzMywicHVyIjoiYmxvYl9pZCJ9fQ==--fe9d18427950142d718ea7fb2086aa0ed69e1ecc/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Git%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">GIT103</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e08fca243bdc3c68a162cbfd843634f8fce84d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/paint.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQzMywicHVyIjoiYmxvYl9pZCJ9fQ==--fe9d18427950142d718ea7fb2086aa0ed69e1ecc/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Git%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>高見龍</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e08fca243bdc3c68a162cbfd843634f8fce84d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/paint.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>高見龍</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>Git 小教室</h3>
@@ -296,21 +343,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">GIT101</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM4MywicHVyIjoiYmxvYl9pZCJ9fQ==--0f2f314c9284fc0e92fb6db020b553fd118a069b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Git%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">GIT101</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e08fca243bdc3c68a162cbfd843634f8fce84d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/paint.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM4MywicHVyIjoiYmxvYl9pZCJ9fQ==--0f2f314c9284fc0e92fb6db020b553fd118a069b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Git%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>高見龍</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e08fca243bdc3c68a162cbfd843634f8fce84d3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/paint.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>高見龍</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>坐上 Git 時光機 - 版本控制（直播）</h3>
@@ -328,21 +377,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">FP101</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzMzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--82d62e065cf7cfec805de4d9c44ff6ddd56f2bad/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Cover%201%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">FP101</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjMxLCJwdXIiOiJibG9iX2lkIn19--26e355d9274a025cdf50afe0ceb0daa1c2775ecd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/teacher_taian.jpg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzMzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--82d62e065cf7cfec805de4d9c44ff6ddd56f2bad/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Cover%201%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>蘇泰安</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjMxLCJwdXIiOiJibG9iX2lkIn19--26e355d9274a025cdf50afe0ceb0daa1c2775ecd/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f3ce3a687da8d31dcda58034d88ac4546c4280d4/teacher_taian.jpg"
+                    alt=""
+                  />
+                </div>
+                <p>蘇泰安</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>工作上用得到的函數式程式設計</h3>
@@ -361,21 +412,23 @@
           </article>
           <article class="product-card">
             <span class="product-type">線上課程</span>
-            <div class="product-img">
-              <span class="product-no">FE301</span>
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM0MywicHVyIjoiYmxvYl9pZCJ9fQ==--3ce5c8b9f8ea38d113afa0b430f6efe77649178a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Webpack%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
+                <span class="product-no">FE301</span>
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--6cacb6921768aabdd9a3a8be8fc89758b5ac9587/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/MilkMidi%20400x400.webp"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM0MywicHVyIjoiYmxvYl9pZCJ9fQ==--3ce5c8b9f8ea38d113afa0b430f6efe77649178a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Webpack%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>奶綠茶</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--6cacb6921768aabdd9a3a8be8fc89758b5ac9587/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/MilkMidi%20400x400.webp"
+                    alt=""
+                  />
+                </div>
+                <p>奶綠茶</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>Webpack 5 入門</h3>
@@ -399,20 +452,22 @@
         <div class="products-area">
           <article class="product-card">
             <span class="product-type">實體課程</span>
-            <div class="product-img">
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQ1NywicHVyIjoiYmxvYl9pZCJ9fQ==--a0e4eb51532903eefde0614ef4c37fafd5520486/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxMjgwLDcyMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--cfbe06774f098f375fc6e84581c8de78b8e9254f/Larevel%20%E5%85%A5%E9%96%80.png"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQ1MywicHVyIjoiYmxvYl9pZCJ9fQ==--b4e0b8a14699f0134f4617dca212be9e66fc6dd4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--95977e047fb4369c910e084a89ba01438d7f7fa4/recca.jpeg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQ1NywicHVyIjoiYmxvYl9pZCJ9fQ==--a0e4eb51532903eefde0614ef4c37fafd5520486/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxMjgwLDcyMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--cfbe06774f098f375fc6e84581c8de78b8e9254f/Larevel%20%E5%85%A5%E9%96%80.png"
+                  alt="課程"
                 />
               </div>
-              <p>趙家笙 Recca Chao</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQ1MywicHVyIjoiYmxvYl9pZCJ9fQ==--b4e0b8a14699f0134f4617dca212be9e66fc6dd4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--95977e047fb4369c910e084a89ba01438d7f7fa4/recca.jpeg"
+                    alt=""
+                  />
+                </div>
+                <p>趙家笙 Recca Chao</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>Laravel 入門</h3>
@@ -429,20 +484,22 @@
           </article>
           <article class="product-card">
             <span class="product-type">實體課程</span>
-            <div class="product-img">
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--3ab2b0130f8069518eca79ab2ca9ac00200b5b28/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/React%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--6cacb6921768aabdd9a3a8be8fc89758b5ac9587/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/MilkMidi%20400x400.webp"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--3ab2b0130f8069518eca79ab2ca9ac00200b5b28/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/React%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>奶綠茶</p>
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--6cacb6921768aabdd9a3a8be8fc89758b5ac9587/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/MilkMidi%20400x400.webp"
+                    alt=""
+                  />
+                </div>
+                <p>奶綠茶</p>
+              </div>
             </div>
             <div class="product-content">
               <h3>React 全攻略 - 入門到進階</h3>
@@ -459,52 +516,22 @@
           </article>
           <article class="product-card">
             <span class="product-type">實體課程</span>
-            <div class="product-img">
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQ1NywicHVyIjoiYmxvYl9pZCJ9fQ==--a0e4eb51532903eefde0614ef4c37fafd5520486/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxMjgwLDcyMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--cfbe06774f098f375fc6e84581c8de78b8e9254f/Larevel%20%E5%85%A5%E9%96%80.png"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
+            <div class="product-header">
+              <div class="product-img">
                 <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzUyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--28221d83d1d47068ed1e8c4db672b89f8c097970/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGVnIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--95977e047fb4369c910e084a89ba01438d7f7fa4/ashley.jpeg"
-                  alt=""
+                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM4NSwicHVyIjoiYmxvYl9pZCJ9fQ==--ec73c102ea6bdcf3ea044f93741ff3ed6ed596e4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Vue.js%20800x500.webp"
+                  alt="課程"
                 />
               </div>
-              <p>小賴</p>
-            </div>
-            <div class="product-content">
-              <h3>Docker 實戰指南</h3>
-              <p>
-                本課程從基礎操作開始，介紹到底層實現 Docker 的技術，特別是
-                Docker image 和 Dockerfile 的開發和優化。
-                課程將通過實驗驗證、動手操作和問題除錯等各面向，做帶領學員掌握
-                Docker 的核心概念和最佳作法，了解如何將應用程式容器化，並為
-                Kubernetes 等平台做好準備。
-              </p>
-            </div>
-            <div class="product-price">
-              <span class="type">後端課程</span>
-              <span class="price">NT$4,000</span>
-            </div>
-          </article>
-          <article class="product-card">
-            <span class="product-type">實體課程</span>
-            <div class="product-img">
-              <img
-                src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM4NSwicHVyIjoiYmxvYl9pZCJ9fQ==--ec73c102ea6bdcf3ea044f93741ff3ed6ed596e4/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTI4MCw3MjBdfSwicHVyIjoidmFyaWF0aW9uIn19--a40738ef8f2b8db0b4c9c24d7b7c42ad1059eb4c/Vue.js%20800x500.webp"
-                alt="課程"
-              />
-            </div>
-            <div class="product-lecturer">
-              <div class="pic">
-                <img
-                  src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--2451f5263bc13483e14b40570f0e81093e42482c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/Kuro%20400x400.webp"
-                  alt=""
-                />
+              <div class="product-lecturer">
+                <div class="pic">
+                  <img
+                    src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--2451f5263bc13483e14b40570f0e81093e42482c/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbNDAwLDQwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--9c7e55b87904770b9d1ed4dfe9d142d33784667a/Kuro%20400x400.webp"
+                    alt=""
+                  />
+                </div>
+                <p>Kuro Hsu</p>
               </div>
-              <p>Kuro Hsu</p>
             </div>
             <div class="product-content">
               <h3>Vue.js 3.x 與 Pinia 前端開發實戰</h3>
@@ -527,23 +554,19 @@
       </section>
 
       <section class="video-area">
-        <div class="img-bg">
-          <div class="video-img">
-            <h2 class="caption">ASTRO CAMP</h2>
-            <h3 class="sub-title">三個月實戰轉職全端工程師</h3>
-            <div class="content">
-              <p>
-                除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。
-              </p>
-              <p>
-                裝備你的軟、硬實力，讓零基礎決心轉職工程師，再也不是紙上談兵。
-              </p>
-            </div>
-            <div class="btn">
-              <button>
-                了解課程內容<i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
+        <div class="video-bgimg">
+          <h2 class="caption">ASTRO CAMP</h2>
+          <h3 class="sub-title">三個月實戰轉職全端工程師</h3>
+          <div class="content">
+            <p>
+              除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。
+            </p>
+            <p class="p_20">
+              裝備你的軟、硬實力，讓零基礎決心轉職工程師，再也不是紙上談兵。
+            </p>
+          </div>
+          <div class="btn">
+            <button>了解課程內容<i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
         <div class="video">
@@ -691,12 +714,10 @@
           <h3 class="title">企業服務</h3>
           <div class="service-items">
             <article>
-              <div class="service-img">
-                <img
-                  src="https://dmh6legpso131.cloudfront.net/images/banners/consult-banner-pc.svg"
-                  alt=""
-                />
-              </div>
+              <img
+                src="https://dmh6legpso131.cloudfront.net/images/banners/consult-banner-pc.svg"
+                alt=""
+              />
               <div class="service-content">
                 <span>企業訓練</span>
                 <p>
@@ -710,12 +731,10 @@
               </div>
             </article>
             <article>
-              <div class="service-img">
-                <img
-                  src="https://dmh6legpso131.cloudfront.net/images/banners/consult-banner-pc.svg"
-                  alt=""
-                />
-              </div>
+              <img
+                src="https://dmh6legpso131.cloudfront.net/images/banners/consult-banner-pc.svg"
+                alt=""
+              />
               <div class="service-content">
                 <span>技術諮詢</span>
                 <p>
@@ -761,8 +780,8 @@
               <li>關於五倍學院</li>
               <li>常見問題</li>
               <li>聯絡我們</li>
-              <li>隱私權條款</li>
-              <li>使用條款</li>
+              <li class="font-gray">隱私權條款</li>
+              <li class="font-gray">使用條款</li>
             </ul>
           </div>
         </div>
@@ -771,8 +790,9 @@
     <section class="company-area">
       <div>
         <p>
-          © 2014 - 2024 五倍紅寶石程式資訊教育股份有限公司 |
-          台北市短期補習班立案第 7594 號
+          <span>© 2014 - 2024 五倍紅寶石程式資訊教育股份有限公司</span>
+          <i> | </i>
+          <span>台北市短期補習班立案第 7594 號</span>
         </p>
         <p>
           五倍紅寶石程式資訊教育股份有限公司附設臺北市私立五倍紅寶石文理技藝短期補習班（統一編號：88117125）

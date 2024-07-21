@@ -1,31 +1,53 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let oldMenuItem;
-  document.querySelector(".menu").addEventListener("click", function (e) {
-    const menuItem = e.target.closest("li"); // 取被點到的 li
-    if (!menuItem) {
-      // e.target 有可能是 ul
-      return;
-    }
+  // let oldMenuItem;
+  // document.querySelector(".menu").addEventListener("click", function (e) {
+  //   const menuItem = e.target.closest("li"); // 取被點到的 li
+  //   if (!menuItem) {
+  //     // e.target 有可能是 ul
+  //     return;
+  //   }
 
-    // 點到新的項目, 要移除前一個的 class
-    if (oldMenuItem) {
-      oldMenuItem.classList.remove("click");
-      if (oldMenuItem.querySelector(".sub-menu")) {
-        oldMenuItem.querySelector(".sub-menu").classList.add("hide");
-      }
-    }
+  //   // 點到新的項目, 要移除前一個的 class
+  //   if (oldMenuItem) {
+  //     oldMenuItem.classList.remove("click");
+  //     if (oldMenuItem.querySelector(".sub-menu")) {
+  //       oldMenuItem.querySelector(".sub-menu").classList.add("hide");
+  //     }
+  //   }
 
-    menuItem.classList.add("click"); // menu 下的 li 被點到要套 click class
-    oldMenuItem = menuItem;
-    if (menuItem.classList.contains("arrows")) {
-      // 檢查 li 是否有 arrows class, 有表示有子選單
-      const subMenu = menuItem.querySelector(".sub-menu");
+  //   menuItem.classList.add("click"); // menu 下的 li 被點到要套 click class
+  //   oldMenuItem = menuItem;
+  //   if (menuItem.classList.contains("arrows")) {
+  //     // 檢查 li 是否有 arrows class, 有表示有子選單
+  //     const subMenu = menuItem.querySelector(".sub-menu");
 
-      if (subMenu.classList.contains("hide")) {
-        subMenu.classList.remove("hide"); // 隱藏 sub-menu
-      } else {
-        subMenu.classList.add("hide"); // 顯示 sub-menu
-      }
+  //     if (subMenu.classList.contains("hide")) {
+  //       subMenu.classList.remove("hide"); // 隱藏 sub-menu
+  //     } else {
+  //       subMenu.classList.add("hide"); // 顯示 sub-menu
+  //     }
+  //   }
+  // });
+
+  let radioItem, menuItem;
+  document
+    .querySelectorAll(".menu input[type='radio']")
+    .forEach(function (radio) {
+      radio.addEventListener("click", function (e) {
+        menuItem = e.target.closest("li"); // 取被點到的 li
+        if (radioItem && radioItem == e.target) {
+          radioItem.checked = false;
+          radioItem = "";
+        } else {
+          radioItem = e.target;
+        }
+      });
+    });
+
+  document.addEventListener("click", function (e) {
+    if (radioItem && !menuItem.contains(e.target)) {
+      radioItem.checked = false;
+      radioItem = "";
     }
   });
 
