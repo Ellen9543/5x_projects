@@ -1,0 +1,29 @@
+{
+  "name": "shopping_cart",
+  "version": "2.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html --no-cache",
+    "build": "parcel build src/index.html --no-cache"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@parcel/transformer-sass": "^2.4.0",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "parcel": "^2.4.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "stream-browserify": "^3.0.0",
+    "timers-browserify": "^2.0.12",
+    "util": "^0.12.5"
+  },
+  "dependencies": {
+    "alpine": "^0.2.1",
+    "alpinejs": "^3.14.1",
+    "bootstrap": "^4.6.0"
+  },
+  "staticFiles": {
+    "staticPath": "src/images"
+  }
+}
